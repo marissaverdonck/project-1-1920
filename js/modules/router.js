@@ -7,17 +7,23 @@ function router() {
 
   routie({
     '': () => {
-        startApp()
-      }
-      // 'detail:id?/:lat?/:lon': (id, lat, lon) => {
-      //   detailpage(id, lat, lon)
-      // }
+      startApp()
+    },
+
+    ':id': () => {
+      userInput()
+    }
   });
 }
 
 function startApp() {
   const categories = getCategories(data);
   renderCategories(categories)
+}
+
+function userInput() {
+
+
 }
 
 

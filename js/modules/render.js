@@ -32,4 +32,6 @@ function renderCategories(categories) {
   }, 0)
 }
 
+
+
 export { render, renderCategories }
