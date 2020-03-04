@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-family: avenir-light;
+  font-family: avenir-black;
   font-size: 1.2em;
 }
 
@@ -60,6 +60,7 @@ header {
   left: 0;
   top: 0;
   align-items: center;
+  background-color: #ffffff;
 }
 
 header img {
@@ -99,6 +100,9 @@ main {
   margin-top: 14vh;
 }
 
+
+/* INTRO COLORED LETTERS */
+
 main #intro h1 {
   text-align: center;
 }
@@ -137,39 +141,46 @@ main #intro h1 span:nth-of-type(12) {
   color: #d8127d;
 }
 
+
+/* ------ CATEGORIES ------ */
+
 main #categoryList {
   display: flex;
   overflow-x: scroll;
 }
 
-main article div {
+main a {
+  text-decoration: none;
+}
+
+main article a div {
   border-radius: 50%;
-  width: 10em;
-  height: 10em;
+  width: 8em;
+  height: 8em;
   background-color: #009949;
   text-align: center;
   padding: 1.5em;
   margin: 1em;
 }
 
-main a:nth-of-type(1) article div,
-main a:nth-of-type(4) article div,
-main a:nth-of-type(7) article div,
-main a:nth-of-type(10) article div {
+main article:nth-of-type(1)a div,
+main article:nth-of-type(4) a div,
+main article:nth-of-type(7) a div,
+main article:nth-of-type(10) a div {
   background-color: #009949;
 }
 
-main a:nth-of-type(2) article div,
-main a:nth-of-type(5) article div,
-main a:nth-of-type(8) article div,
-main a:nth-of-type(11) article div {
+main article:nth-of-type(2) a div,
+main article:nth-of-type(5) a div,
+main article:nth-of-type(8) a div,
+main article:nth-of-type(11) a div {
   background-color: #00a3da;
 }
 
-main a:nth-of-type(3) article div,
-main a:nth-of-type(6) article div,
-main a:nth-of-type(9) article div,
-main a:nth-of-type(12) article div {
+main article:nth-of-type(3) a div,
+main article:nth-of-type(6) a div,
+main article:nth-of-type(9) a div,
+main article:nth-of-type(12) a div {
   background-color: #812c7c;
 }
 
@@ -179,6 +190,22 @@ main article div svg {
 }
 
 main a article h2 {
+  text-decoration: none;
+  color: #4a4a4a;
+  display: block;
+  text-align: center;
+  padding: .5em 1em;
+  margin: 1em;
+}
+
+.selected a div {
+  width: 10em;
+  height: 10em;
+  margin-top: 30vh;
+  transition: all 1000ms;
+}
+
+.selected h2 {
   color: #ffffff;
   text-decoration: none;
   background-color: #d8127d;
@@ -187,13 +214,17 @@ main a article h2 {
   padding: .5em 1em;
   margin: 1em;
   border-radius: 1.25em;
+  font-family: avenir-book;
 }
+
+
+/* ------ ANIMATIONS ------ */
 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-3600deg);
+    transform: rotate(-360deg);
   }
 }
