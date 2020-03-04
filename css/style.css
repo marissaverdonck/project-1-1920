@@ -1,0 +1,199 @@
+@font-face {
+  font-family: avenir-black;
+  src: url('Avenir_Black.ttf')
+}
+
+@font-face {
+  font-family: avenir-book;
+  src: url('Avenir_Book.ttf')
+}
+
+@font-face {
+  font-family: avenir-light;
+  src: url('Avenir_Light.ttf')
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  font-family: avenir-black;
+  font-size: 10vw;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: avenir-light;
+  font-size: 1.2em;
+}
+
+h4 {
+  font-family: avenir-black;
+}
+
+p {
+  font-family: avenir-book;
+}
+
+label {
+  font-family: avenir-book;
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  height: 4em;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .17);
+  border: .5px solid #eee;
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-items: center;
+}
+
+header img {
+  width: 4.5em;
+  margin: .5em;
+}
+
+header article {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+header article:nth-of-type(1) {
+  background-color: #d8127d;
+}
+
+header article:nth-of-type(1) label {
+  font-family: avenir-light;
+  font-weight: 100;
+  color: #ffffff;
+  margin: auto .5em;
+  height: 4em;
+}
+
+header article h4 {
+  color: #00a3da;
+  margin: auto 0em;
+}
+
+header article img {
+  height: 1.5em;
+  width: 1.5em;
+  margin: auto .5em;
+}
+
+main {
+  margin-top: 10em;
+}
+
+main #intro h1 {
+  text-align: center;
+}
+
+main #intro h1 span {
+  margin-right: -.2em;
+  padding: 0;
+  display: inline-block;
+}
+
+main #intro h1 span:nth-of-type(1),
+main #intro h1 span:nth-of-type(5),
+main #intro h1 span:nth-of-type(9),
+main #intro h1 span:nth-of-type(13) {
+  color: #812c7c;
+}
+
+main #intro h1 span:nth-of-type(2),
+main #intro h1 span:nth-of-type(6),
+main #intro h1 span:nth-of-type(10),
+main #intro h1 span:nth-of-type(14) {
+  color: #00a3da;
+  font-size: 14vw;
+}
+
+main #intro h1 span:nth-of-type(3),
+main #intro h1 span:nth-of-type(7),
+main #intro h1 span:nth-of-type(11) {
+  color: #009949;
+  animation: spin 60s linear infinite;
+}
+
+main #intro h1 span:nth-of-type(4),
+main #intro h1 span:nth-of-type(8),
+main #intro h1 span:nth-of-type(12) {
+  color: #d8127d;
+}
+
+main #categoryList {
+  display: flex;
+  overflow-x: scroll;
+}
+
+main article div {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  background-color: #009949;
+  text-align: center;
+  padding: 1.5em;
+  margin: 1em;
+}
+
+main a:nth-of-type(1) article div,
+main a:nth-of-type(4) article div,
+main a:nth-of-type(7) article div,
+main a:nth-of-type(10) article div {
+  background-color: #009949;
+}
+
+main a:nth-of-type(2) article div,
+main a:nth-of-type(5) article div,
+main a:nth-of-type(8) article div,
+main a:nth-of-type(11) article div {
+  background-color: #00a3da;
+}
+
+main a:nth-of-type(3) article div,
+main a:nth-of-type(6) article div,
+main a:nth-of-type(9) article div,
+main a:nth-of-type(12) article div {
+  background-color: #812c7c;
+}
+
+main article div svg {
+  margin: 0 auto;
+  display: block;
+}
+
+main a article h2 {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #d8127d;
+  display: block;
+  text-align: center;
+  padding: .5em 1em;
+  margin: 1em;
+  border-radius: 1.25em;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-3600deg);
+  }
+}
