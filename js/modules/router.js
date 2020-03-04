@@ -1,5 +1,5 @@
 import data from './categories.js'
-import { getCategories } from '/data.js'
+import { getCategories } from './data.js'
 import { renderCategories } from './render.js'
 
 
