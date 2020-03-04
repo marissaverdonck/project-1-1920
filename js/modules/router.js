@@ -17,6 +17,7 @@ function router() {
 }
 
 function startApp() {
+  console.log('startApp()')
   const categories = getCategories(data);
   renderCategories(categories)
 }
