@@ -28,9 +28,9 @@ function renderCategories(categories) {
       <article id="${cur.id}">
       <a href="#${cur.id}">
       <div> ${cur.image}</div>
-     <h2>${cur.name}</h2>  
+      <h2>${cur.name}</h2>  
      </a>
-     <ul class="subCategoryList"></ul>
+     <div class="wrapper"></div>
       </article>
    `)
   }, 0)
@@ -46,16 +46,21 @@ function renderSubCategories(subCategories, id) {
   // console.log(id)
   // console.log(subCategories)
   // console.log(subCategoryList)
-  const wrapper = document.querySelector('.wrapper')
-  wrapper !== null ? (wrapper.remove(), renderArray()) : renderArray()
+  const list = document.querySelector('.list')
+  list !== null ? (list.remove(), renderArray()) : renderArray()
 
   function renderArray() {
-    const subCategoryList = document.querySelector('#' + id + '>ul')
-    subCategoryList.insertAdjacentHTML('afterbegin', `<div class="wrapper"></div>`)
-    const wrapper = document.querySelector('.wrapper')
+    const subCategoryList = document.querySelector('#' + id + '> div')
+    subCategoryList.insertAdjacentHTML('afterbegin', `<ul class="list"></ul>`)
+    const list = document.querySelector('.list')
     subCategories.reduce(function(acc, cur, ind) {
-      wrapper.insertAdjacentHTML('afterbegin', `
-      <li>${cur.name}</li>
+      list.insertAdjacentHTML('afterbegin', `
+      <li>
+      <a>
+      <span>${cur.name}
+      </span>
+      </a>
+      </li>
     `)
     }, 0)
   }
