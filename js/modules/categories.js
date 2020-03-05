@@ -160,8 +160,8 @@ export default {
           'id': 'beren'
         },
         {
-          'name': 'Bijen & hommels',
-          'id': 'bijenenhommels'
+          'name': 'Bijen',
+          'id': 'bijen'
         },
         {
           'name': 'Bloembollen',
@@ -176,8 +176,8 @@ export default {
           'id': 'camouflage'
         },
         {
-          'name': 'Charles Darwin',
-          'id': 'charlesdarwin'
+          'name': 'Vlinder',
+          'id': 'vlinders'
         },
         {
           'name': 'Dierenasiel',
@@ -221,8 +221,8 @@ export default {
           'id': 'fruit'
         },
         {
-          'name': 'Gezonde voeding',
-          'id': 'gezondevoeding'
+          'name': 'Voeding',
+          'id': 'voeding'
         },
         {
           'name': 'Groente',
@@ -250,16 +250,16 @@ export default {
         'id': 'geschiedenis'
       },
       'subcategories': [{
-          'name': 'Albert Einstein',
-          'id': 'alberteinstein'
+          'name': 'A. Einstein',
+          'id': 'einstein'
         },
         {
-          'name': 'Aletta Jacobs',
-          'id': 'alettaJacobs'
+          'name': 'de IJdstijd',
+          'id': 'ijstijd'
         },
         {
-          'name': 'Anne Frank',
-          'id': 'annefrank'
+          'name': 'Kastelen',
+          'id': 'kastelen'
         },
         {
           'name': 'Archeologie',
@@ -274,12 +274,12 @@ export default {
           'id': 'boekdrukkunst'
         },
         {
-          'name': 'Charles Darwin',
-          'id': 'charlesdarwin'
+          'name': 'Kruistochten',
+          'id': 'kruistochten'
         },
         {
           'name': 'De Hanze',
-          'id': 'dehanze'
+          'id': 'hanze'
         },
         {
           'name': 'Deltawerken',
@@ -298,8 +298,8 @@ export default {
         'id': 'kuntencultuur'
       },
       'subcategories': [{
-          'name': 'Annie M.G. Schmidt',
-          'id': 'anniemgschmidt'
+          'name': 'Jazz',
+          'id': 'jazz'
         },
         {
           'name': 'Architect',
@@ -307,7 +307,7 @@ export default {
         },
         {
           'name': 'bach',
-          'id': 'back'
+          'id': 'bach'
         },
         {
           'name': 'Beethoven',
@@ -470,8 +470,8 @@ export default {
           'id': 'duiken'
         },
         {
-          'name': 'Formule 1',
-          'id': 'formule1'
+          'name': 'Schaatsen',
+          'id': 'schaatsen'
         },
         {
           'name': 'Games',
@@ -498,12 +498,12 @@ export default {
           'id': 'aardolie'
         },
         {
-          'name': 'Albert Einstein',
-          'id': 'alberteinstein'
+          'name': '3D',
+          'id': '3d'
         },
         {
           'name': "Auto's",
-          'id': 'autos'
+          'id': 'auto'
         },
         {
           'name': 'Biomassa',

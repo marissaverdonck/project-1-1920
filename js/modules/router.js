@@ -36,6 +36,7 @@ function userInput(id) {
   classSelected !== null ? classSelected.classList.remove('selected') : console.log('get subCategories')
   const subCategories = getSubCategories(id)
   renderSubCategories(subCategories, id)
+  return id
 }
 
 function results(id) {
@@ -44,13 +45,8 @@ function results(id) {
     // getNameFromId(id)
 
 
-  getData()
-    // console.log(data)
+  getData(id)
 
-
-
-
-  //   // renderResults(data))
 
 
 
