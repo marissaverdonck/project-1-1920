@@ -1,17 +1,20 @@
 import data from './categories.js'
-import { getCategories, getSubCategories } from './data.js'
-import { renderCategories, renderSubCategories } from './render.js'
+import { getCategories, getSubCategories, getNameFromId } from './data.js'
+import { renderCategories, renderSubCategories, renderResults } from './render.js'
+import { getData } from './obaApi.js'
 
 
 function router() {
-
+  console.log('router.js')
   routie({
     '': () => {
       startApp()
     },
-
     ':id': (id) => {
       userInput(id)
+    },
+    'results/:id': (id) => {
+      results(id)
     }
   });
 }
@@ -30,9 +33,28 @@ function userInput(id) {
 
   // Remove the class="selected" from the last category
   selectedId.classList.add('selected')
-  classSelected !== null ? classSelected.classList.remove('selected') : console.log('No class selected')
+  classSelected !== null ? classSelected.classList.remove('selected') : console.log('get subCategories')
   const subCategories = getSubCategories(id)
   renderSubCategories(subCategories, id)
+}
+
+function results(id) {
+  const categoryList = document.querySelector('#categoryList')
+  categoryList.remove()
+    // getNameFromId(id)
+
+
+  getData()
+    // console.log(data)
+
+
+
+
+  //   // renderResults(data))
+
+
+
+
 }
 
 export { router }

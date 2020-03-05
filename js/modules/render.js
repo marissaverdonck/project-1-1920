@@ -1,30 +1,32 @@
 import { getCategories } from "./data.js";
 const categoryList = document.getElementById('categoryList')
+const resultList = document.getElementById('resultList')
 
 
 // render data
-function render(data) {
-  //   const results = data.results;
-  //   console.dir(results);
-  //   results.forEach((item, i) => {
-  //     const html = `
-  //               <article>
-  //                 <h2>${item.titles[0]}</h2>
-  //                 <p>${item.summaries ? item.summaries[0] : 'Geen samenvatting'}</p>
-  //                 <img src="${
-  //                   item.coverimages ? item.coverimages[1] : 'Geen samenvatting'
-  //                 }">
-  //               </article>
-  //             `;
-  //     main.insertAdjacentHTML('beforeend', html);
-  //   });
+function renderResults(data) {
+  console.log(data)
+
+  const results = data;
+  console.dir(results);
+  results.forEach((item, i) => {
+    const html = `
+                  <article>
+                    <h2>${item.titles[0]}</h2>
+                    <p>${item.summaries ? item.summaries[0] : 'Geen samenvatting'}</p>
+                    <img src="${
+                      item.coverimages ? item.coverimages[1] : 'Geen samenvatting'
+                    }">
+                  </article>
+                `;
+    resultList.insertAdjacentHTML('beforeend', html);
+  });
 }
 
 
 function renderCategories(categories) {
   categories.reduce(function(acc, cur, ind) {
     categoryList.insertAdjacentHTML('beforeend', `
-
       <article id="${cur.id}">
       <a href="#${cur.id}">
       <div> ${cur.image}</div>
@@ -37,15 +39,6 @@ function renderCategories(categories) {
 }
 
 function renderSubCategories(subCategories, id) {
-
-  // const itemSubCategoryList = document.querySelectorAll('.subCategoryList>li')
-  // console.log(itemSubCategoryList)
-  // subCategoryList.remove()
-
-  // itemSubCategoryList !== null ? console.log('er is een lijst') : console.log('er is geen lijst')
-  // console.log(id)
-  // console.log(subCategories)
-  // console.log(subCategoryList)
   const list = document.querySelector('.list')
   list !== null ? (list.remove(), renderArray()) : renderArray()
 
@@ -56,7 +49,7 @@ function renderSubCategories(subCategories, id) {
     subCategories.reduce(function(acc, cur, ind) {
       list.insertAdjacentHTML('afterbegin', `
       <li>
-      <a>
+      <a href="#results/${cur.id}">
       <span>${cur.name}
       </span>
       </a>
@@ -67,4 +60,10 @@ function renderSubCategories(subCategories, id) {
 }
 
 
-export { render, renderCategories, renderSubCategories }
+
+
+
+
+
+
+export { renderResults, renderCategories, renderSubCategories }

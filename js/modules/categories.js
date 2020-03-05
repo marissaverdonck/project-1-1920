@@ -7,34 +7,44 @@ export default {
         'id': 'aarde'
       },
       'subcategories': [{
-          'name': 'Aardbevingen'
+          'name': 'Aardbevingen',
+          'id': 'aardbevingen'
         },
         {
-          'name': 'Aardgas'
+          'name': 'Aardgas',
+          'id': 'aardgas'
         },
         {
-          'name': 'Aardbevingen'
+          'name': 'Grotten',
+          'id': 'grotten'
         },
         {
-          'name': 'Aardolie'
+          'name': 'Aardolie',
+          'id': 'aardolie'
         },
         {
-          'name': 'Afval'
+          'name': 'Afval',
+          'id': 'afval'
         },
         {
-          'name': 'Bergen'
+          'name': 'Bergen',
+          'id': 'bergen'
         },
         {
-          'name': 'Broeikaseffect'
+          'name': 'Broeikaseffect',
+          'id': 'broeikaseffect'
         },
         {
-          'name': 'Deltawerken'
+          'name': 'Deltawerken',
+          'id': 'deltawerken'
         },
         {
-          'name': 'Dijken'
+          'name': 'Dijken',
+          'id': 'dijken'
         },
         {
-          'name': 'Duinen'
+          'name': 'Duinen',
+          'id': 'duinen'
         }
       ]
     }, {
@@ -44,34 +54,44 @@ export default {
         'id': 'mens'
       },
       'subcategories': [{
-          'name': 'ADHD'
+          'name': 'ADHD',
+          'id': 'adhd'
         },
         {
-          'name': 'Ademhaling'
+          'name': 'Ademhaling',
+          'id': 'ademhaling'
         },
         {
-          'name': 'Aids'
+          'name': 'Aids',
+          'id': 'aids'
         },
         {
-          'name': 'Allergie'
+          'name': 'Allergie',
+          'id': 'allergie'
         },
         {
-          'name': 'Angst'
+          'name': 'Angst',
+          'id': 'angst'
         },
         {
-          'name': 'Anorexia'
+          'name': 'Anorexia',
+          'id': 'anorexia'
         },
         {
-          'name': 'Astma'
+          'name': 'Astma',
+          'id': 'astma'
         },
         {
-          'name': 'Autisme'
+          'name': 'Autisme',
+          'id': 'autisme'
         },
         {
-          'name': 'Bacterien'
+          'name': 'Bacterien',
+          'id': 'bacterien'
         },
         {
-          'name': 'Blind'
+          'name': 'Blind',
+          'id': 'blind'
         },
       ]
     },
@@ -83,34 +103,45 @@ export default {
         'id': 'samenleving'
       },
       'subcategories': [{
-          'name': 'Adoptie'
+          'name': 'Adoptie',
+          'id': 'adoptie'
+
         },
         {
-          'name': 'Afval'
+          'name': 'Afval',
+          'id': 'afval'
         },
         {
-          'name': 'Ambulance'
+          'name': 'Ambulance',
+          'id': 'ambulance'
         },
         {
-          'name': 'Architect'
+          'name': 'Architect',
+          'id': 'architect'
         },
         {
-          'name': 'Bevrijdingsdag'
+          'name': 'Bevrijdingsdag',
+          'id': 'bevrijdingsdag'
         },
         {
-          'name': 'Broeikaseffect'
+          'name': 'Broeikaseffect',
+          'id': 'broeikaseffect'
         },
         {
-          'name': 'Democratie'
+          'name': 'Democratie',
+          'id': 'democratie'
         },
         {
-          'name': 'Dierenasiel'
+          'name': 'Dierenasiel',
+          'id': 'dierenasiel'
         },
         {
-          'name': 'Dierenbescherming'
+          'name': 'Dierenbescherming',
+          'id': 'dierenbescherming'
         },
         {
-          'name': 'Discriminatie'
+          'name': 'Discriminatie',
+          'id': 'discriminatie'
         }
       ]
     },
@@ -121,34 +152,44 @@ export default {
         'id': 'dierenplant'
       },
       'subcategories': [{
-          'name': 'Apen'
+          'name': 'Apen',
+          'id': 'apen'
         },
         {
-          'name': 'Beren'
+          'name': 'Beren',
+          'id': 'beren'
         },
         {
-          'name': 'Bijen & hommels'
+          'name': 'Bijen & hommels',
+          'id': 'bijenenhommels'
         },
         {
-          'name': 'Bloembollen'
+          'name': 'Bloembollen',
+          'id': 'bloembollen'
         },
         {
-          'name': 'Bomen'
+          'name': 'Bomen',
+          'id': 'bomen'
         },
         {
-          'name': 'Camouflage'
+          'name': 'Camouflage',
+          'id': 'camouflage'
         },
         {
-          'name': 'Charles Darwin'
+          'name': 'Charles Darwin',
+          'id': 'charlesdarwin'
         },
         {
-          'name': 'Dierenasiel'
+          'name': 'Dierenasiel',
+          'id': 'dierenasiel'
         },
         {
-          'name': 'Dinosaurussen'
+          'name': 'Dinosaurussen',
+          'id': 'dinosaurussen'
         },
         {
-          'name': 'Dolfijen'
+          'name': 'Dolfijen',
+          'id': 'dolfijen'
         }
       ]
     },
@@ -160,34 +201,44 @@ export default {
         'id': 'etenendrinken'
       },
       'subcategories': [{
-          'name': 'Alcohol'
+          'name': 'Alcohol',
+          'id': 'alcohol'
         },
         {
-          'name': 'Brood'
+          'name': 'Brood',
+          'id': 'brood'
         },
         {
-          'name': 'Cacao'
+          'name': 'Cacao',
+          'id': 'cacao'
         },
         {
-          'name': 'Frisdrank'
+          'name': 'Frisdrank',
+          'id': 'frisdrank'
         },
         {
-          'name': 'Fruit'
+          'name': 'Fruit',
+          'id': 'fruit'
         },
         {
-          'name': 'Gezonde voeding'
+          'name': 'Gezonde voeding',
+          'id': 'gezondevoeding'
         },
         {
-          'name': 'Groente'
+          'name': 'Groente',
+          'id': 'groente'
         },
         {
-          'name': 'Koffie'
+          'name': 'Koffie',
+          'id': 'koffie'
         },
         {
-          'name': 'Snoep'
+          'name': 'Snoep',
+          'id': 'snoep'
         },
         {
-          'name': 'Suiker'
+          'name': 'Suiker',
+          'id': 'suiker'
         }
       ]
     },
@@ -199,34 +250,44 @@ export default {
         'id': 'geschiedenis'
       },
       'subcategories': [{
-          'name': 'Albert Einstein'
+          'name': 'Albert Einstein',
+          'id': 'alberteinstein'
         },
         {
-          'name': 'Aletta Jacobs'
+          'name': 'Aletta Jacobs',
+          'id': 'alettaJacobs'
         },
         {
-          'name': 'Anne Frank'
+          'name': 'Anne Frank',
+          'id': 'annefrank'
         },
         {
-          'name': 'Archeologie'
+          'name': 'Archeologie',
+          'id': 'archeologie'
         },
         {
-          'name': 'Beeldenstorm'
+          'name': 'Beeldenstorm',
+          'id': 'beeldenstorm'
         },
         {
-          'name': 'Boekdrukkunst'
+          'name': 'Boekdrukkunst',
+          'id': 'boekdrukkunst'
         },
         {
-          'name': 'Charles Darwin'
+          'name': 'Charles Darwin',
+          'id': 'charlesdarwin'
         },
         {
-          'name': 'De Hanze'
+          'name': 'De Hanze',
+          'id': 'dehanze'
         },
         {
-          'name': 'Deltawerken'
+          'name': 'Deltawerken',
+          'id': 'deltawerken'
         },
         {
-          'name': 'Dinosaurussen'
+          'name': 'Dinosaurussen',
+          'id': 'dinosaurussen'
         }
       ]
     },
@@ -237,34 +298,44 @@ export default {
         'id': 'kuntencultuur'
       },
       'subcategories': [{
-          'name': 'Annie M.G. Schmidt'
+          'name': 'Annie M.G. Schmidt',
+          'id': 'anniemgschmidt'
         },
         {
-          'name': 'Architect'
+          'name': 'Architect',
+          'id': 'architect'
         },
         {
-          'name': 'Bach'
+          'name': 'bach',
+          'id': 'back'
         },
         {
-          'name': 'Beethoven'
+          'name': 'Beethoven',
+          'id': 'beethoven'
         },
         {
-          'name': 'Circus'
+          'name': 'Circus',
+          'id': 'circus'
         },
         {
-          'name': 'Disney'
+          'name': 'Disney',
+          'id': 'disney'
         },
         {
-          'name': 'Escher'
+          'name': 'Escher',
+          'id': 'escher'
         },
         {
-          'name': 'Fotograaf'
+          'name': 'Fotograaf',
+          'id': 'fotograaf'
         },
         {
-          'name': 'Gitaar'
+          'name': 'Gitaar',
+          'id': 'gitaar'
         },
         {
-          'name': 'Goochelen'
+          'name': 'Goochelen',
+          'id': 'goochelen'
         }
       ]
     },
@@ -275,34 +346,44 @@ export default {
         'id': 'levensbeschouwing'
       },
       'subcategories': [{
-          'name': 'Bijgeloof'
+          'name': 'Bijgeloof',
+          'id': 'bijgeloof'
         },
         {
-          'name': 'Boeddhisme'
+          'name': 'Boeddhisme',
+          'id': 'boeddhisme'
         },
         {
-          'name': 'Carnaval'
+          'name': 'Carnaval',
+          'id': 'carnaval'
         },
         {
-          'name': 'Christendom'
+          'name': 'Christendom',
+          'id': 'christendom'
         },
         {
-          'name': 'Hindoeisme'
+          'name': 'Hindoeisme',
+          'id': 'hindoeisme'
         },
         {
-          'name': 'Islam'
+          'name': 'Islam',
+          'id': 'sslam'
         },
         {
-          'name': 'Jodendom'
+          'name': 'Jodendom',
+          'id': 'jodendom'
         },
         {
-          'name': 'Kerst'
+          'name': 'Kerst',
+          'id': 'kerst'
         },
         {
-          'name': 'Pasen'
+          'name': 'Pasen',
+          'id': 'pasen'
         },
         {
-          'name': 'Ramadan'
+          'name': 'Ramadan',
+          'id': 'ramadan'
         }
       ]
     },
@@ -313,34 +394,44 @@ export default {
         'id': 'landenensteden'
       },
       'subcategories': [{
-          'name': 'Aboriginals'
+          'name': 'Aboriginals',
+          'id': 'aboriginals'
         },
         {
-          'name': 'Amsterdam'
+          'name': 'Amsterdam',
+          'id': 'amsterdam'
         },
         {
-          'name': 'Argentinie'
+          'name': 'Argentinie',
+          'id': 'argentinie'
         },
         {
-          'name': 'Australie'
+          'name': 'Australie',
+          'id': 'australie'
         },
         {
-          'name': 'Belgie'
+          'name': 'Belgie',
+          'id': 'belgie'
         },
         {
-          'name': 'Brazilie'
+          'name': 'Brazilie',
+          'id': 'brazilie'
         },
         {
-          'name': 'Canada'
+          'name': 'Canada',
+          'id': 'canada'
         },
         {
-          'name': 'China'
+          'name': 'China',
+          'id': 'china'
         },
         {
-          'name': 'Denemarken'
+          'name': 'Denemarken',
+          'id': 'denemarken'
         },
         {
-          'name': 'Duitsland'
+          'name': 'Duitsland',
+          'id': 'duitsland'
         }
       ]
     },
@@ -351,34 +442,44 @@ export default {
         'id': 'sportenvrijetijd'
       },
       'subcategories': [{
-          'name': 'Achtbanen'
+          'name': 'Achtbanen',
+          'id': 'achtbanen'
         },
         {
-          'name': 'Atletiek'
+          'name': 'Atletiek',
+          'id': 'atletiek'
         },
         {
-          'name': 'Ballet'
+          'name': 'Ballet',
+          'id': 'ballet'
         },
         {
-          'name': 'Basketbal'
+          'name': 'Basketbal',
+          'id': 'basketbal'
         },
         {
-          'name': 'Bergbeklimmen'
+          'name': 'Bergbeklimmen',
+          'id': 'bergbeklimmen'
         },
         {
-          'name': 'Boksen'
+          'name': 'Boksen',
+          'id': 'boksen'
         },
         {
-          'name': 'Duiken'
+          'name': 'Duiken',
+          'id': 'duiken'
         },
         {
-          'name': 'Formule 1'
+          'name': 'Formule 1',
+          'id': 'formule1'
         },
         {
-          'name': 'Games'
+          'name': 'Games',
+          'id': 'games'
         },
         {
-          'name': 'Golf'
+          'name': 'Golf',
+          'id': 'golf'
         }
       ]
     },
@@ -389,34 +490,44 @@ export default {
         'id': 'techniekenwetenschap'
       },
       'subcategories': [{
-          'name': 'Aardgas'
+          'name': 'Aardgas',
+          'id': 'aardgas'
         },
         {
-          'name': 'Aardolie'
+          'name': 'Aardolie',
+          'id': 'aardolie'
         },
         {
-          'name': 'Albert Einstein'
+          'name': 'Albert Einstein',
+          'id': 'alberteinstein'
         },
         {
-          'name': "Auto's"
+          'name': "Auto's",
+          'id': 'autos'
         },
         {
-          'name': 'Biomassa'
+          'name': 'Biomassa',
+          'id': 'biomassa'
         },
         {
-          'name': 'Bruggen'
+          'name': 'Bruggen',
+          'id': 'bruggen'
         },
         {
-          'name': 'Charles Darwin'
+          'name': 'Charles Darwin',
+          'id': 'charlesdarwin'
         },
         {
-          'name': 'Computers'
+          'name': 'Computers',
+          'id': 'computers'
         },
         {
-          'name': 'Deltawerken'
+          'name': 'Deltawerken',
+          'id': 'deltawerken'
         },
         {
-          'name': 'Dijken'
+          'name': 'Dijken',
+          'id': 'dijken'
         }
       ]
     }
