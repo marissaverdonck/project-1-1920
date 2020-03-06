@@ -1,6 +1,6 @@
-# Werkstuk Themarad
+# Werkstuk Themawiel
 
-<img width="842" alt="Schermafbeelding 2020-02-28 om 08 16 49" src="https://user-images.githubusercontent.com/43657951/76068923-538f8500-5f92-11ea-91ac-1043b5c7fc2e.jpg">
+<img width="842" alt="Schermafbeelding 2020-02-28 om 08 16 49" src="https://user-images.githubusercontent.com/43657951/76069740-9d2c9f80-5f93-11ea-8e5b-ae8df1ec37e6.jpg">
 
 
 ## Table of Contents
