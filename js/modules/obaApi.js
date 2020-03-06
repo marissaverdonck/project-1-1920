@@ -45,7 +45,7 @@ function getData(id) {
   //   .catch(err => {
   //     console.log(err);
 
-  //     // return err
+  // return err
   //   });
 
 }

@@ -81,14 +81,20 @@ header {
   z-index: 100;
 }
 
+header a {
+  padding: 0 1em;
+}
+
 header img {
   width: 4.5em;
   margin: .5em;
+  padding: .1em 0;
 }
 
 header article {
   display: flex;
   margin: 0 0 0 auto;
+  padding: 0 1em;
 }
 
 header article:nth-of-type(1) {
@@ -115,7 +121,7 @@ header article img {
 }
 
 main {
-  margin-top: 14vh;
+  margin-top: 4.5em;
   width: 100%;
   overflow: scroll;
   padding-bottom: 20em;
@@ -262,6 +268,14 @@ main #categoryList .selected h2 {
   top: -23em;
 }
 
+main #categoryList a div svg:hover path,
+main #categoryList a div svg:focus path,
+main #categoryList a div svg:active path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+}
+
 main #categoryList .selected a div svg path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -324,7 +338,9 @@ main #categoryList .selected a div svg path {
   font-weight: 900;
 }
 
-#resultList a:hover p {
+#resultList a:hover p,
+#resultList a:focus p,
+#resultList a:active p {
   text-decoration: underline;
 }
 
@@ -377,6 +393,11 @@ main #categoryList .selected a div svg path {
   max-width: 95%;
 }
 
+#resultList article:hover img {
+  animation: ball 1s ease-in-out infinite;
+  ;
+}
+
 #resultList article:nth-of-type(4n+1) img {
   background-image: url(../img/ovalpurple.png);
 }
@@ -417,6 +438,18 @@ main #categoryList .selected a div svg path {
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(0em);
+  }
+  50% {
+    transform: translateY(-1.5em);
+  }
+  100% {
+    transform: translateY(0em);
   }
 }
 
@@ -628,6 +661,21 @@ main #categoryList .selected a div svg {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   pointer-events: auto;
+}
+
+.selected .wrapper li:hover a,
+.selected .wrapper li:focus a,
+.selected .wrapper li:active a {
+  background: #d8127d;
+  background: -webkit-radial-gradient(transparent 35%, #d8127d 35%);
+  background: -moz-radial-gradient(transparent 35%, #d8127d 35%);
+  background: radial-gradient(transparent 35%, #d8127d 35%);
+}
+
+.selected .wrapper li:hover a span,
+.selected .wrapper li:focus a span,
+.selected .wrapper li:active a span {
+  color: #ffffff;
 }
 
 
