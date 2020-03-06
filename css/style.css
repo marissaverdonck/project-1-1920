@@ -116,6 +116,9 @@ header article img {
 
 main {
   margin-top: 14vh;
+  width: 100%;
+  overflow: scroll;
+  padding-bottom: 20em;
 }
 
 
@@ -170,11 +173,12 @@ main #intro h1 span:nth-of-type(12) {
 
 /* ------ CATEGORIES ------ */
 
-main #categoryList {
+
+/* main #categoryList {
   display: flex;
   overflow-x: scroll;
   height: 90vh;
-}
+} */
 
 main a {
   text-decoration: none;
@@ -182,8 +186,8 @@ main a {
 
 main #categoryList article a div {
   border-radius: 50%;
-  width: 8em;
-  height: 8em;
+  width: 9em;
+  height: 9em;
   background-color: #009949;
   text-align: center;
   padding: 1.5em;
@@ -220,20 +224,27 @@ main #categoryList article {
   margin: 0 .1em 0 0;
 }
 
-main #categoryList article h2 {
+main #categoryList article p {
   text-decoration: none;
-  color: #4a4a4a;
+  color: #ffffff;
   display: block;
   text-align: center;
   text-align: center;
   word-break: break-word;
+  margin: -3.6em auto 0 auto;
+  max-width: 6em;
+  overflow-wrap: break-word;
+  text-align: center;
+  line-height: 1;
 }
 
 main #categoryList .selected a div {
-  width: 10em;
-  height: 10em;
-  margin-top: 17.5em;
+  width: 9em;
+  height: 9em;
   transition: all 1000ms;
+  background-color: #d8127d !important;
+  padding: 1.5em;
+  margin: 1em;
 }
 
 main #categoryList .selected h2 {
@@ -251,7 +262,14 @@ main #categoryList .selected h2 {
   top: -23em;
 }
 
-#chooseCategory {
+main #categoryList .selected a div svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+}
+
+
+/* #chooseCategory {
   height: 8em;
   background-color: #d8127d;
   text-align: center;
@@ -260,11 +278,29 @@ main #categoryList .selected h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 1em;
+} */
+
+#chooseCategory {
+  height: 11em;
+  width: 11em;
+  margin: 0em auto;
+  background-color: #009949;
+  text-align: center;
+  padding: 0 2em;
+  /* margin: 1em; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  top: 18em;
 }
 
 #chooseCategory p {
   color: #ffffff;
-  padding: 0 1em 0 0;
+  font-weight: 900;
+  font-family: avenir-black;
 }
 
 #chooseCategory img {
@@ -378,14 +414,82 @@ main #categoryList .selected h2 {
   }
 }
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
-/* ------ TEST  ------ */
+
+/* ------ categories styling ------ */
+
+main #categoryList {
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+main #categoryList {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+main #categoryList article a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  /* height: 40px;
+  width: 40px; */
+  line-height: 40px;
+  margin-left: -5em;
+  /* margin-top: -20px; */
+  margin-top: -1em;
+  position: absolute;
+  text-align: center;
+}
+
+
+/* ------ subcategories styling----- */
 
 main #categoryList .selected {
   position: relative;
   margin-bottom: 3em;
   height: 15em;
-  background: rgba(0, 0, 0, 0.05);
+  /* background: rgba(0, 0, 0, 0.05); */
+}
+
+main #categoryList button {
+  position: absolute;
+  /* top: 100%;
+  left: 50%; */
+  top: 39%;
+  left: 15.5vw;
+  z-index: 11;
+  margin-top: -2.25em;
+  margin-left: -2.25em;
+  padding-top: 0;
+  width: 7.5em;
+  height: 7.5em;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  background-color: #fff;
+  color: #52be7f;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
 }
 
 main #categoryList .selected a div svg {
@@ -413,11 +517,11 @@ main #categoryList .selected a div svg {
 
 .selected .wrapper {
   position: absolute;
-  top: 150%;
-  left: 50%;
+  top: -1em;
+  left: -5em;
   z-index: 10;
-  margin-top: -13em;
-  margin-left: -13.5em;
+  /* margin-top: -13em;
+  margin-left: -13.5em; */
   width: 27em;
   height: 27em;
   border-radius: 50%;
@@ -439,7 +543,8 @@ main #categoryList .selected a div svg {
 
 /*cover to prevent extra space of anchors from being clickable*/
 
-.selected .wrapper:after {
+
+/* .selected .wrapper:after {
   content: ".";
   display: block;
   font-size: 2em;
@@ -453,7 +558,7 @@ main #categoryList .selected a div svg {
   border-radius: 50%;
   z-index: 10;
   color: transparent;
-}
+} */
 
 .selected .wrapper {
   border-radius: 50%;
@@ -508,10 +613,10 @@ main #categoryList .selected a div svg {
   width: 14.5em;
   height: 14.5em;
   border-radius: 50%;
-  background: #429a67;
-  background: -webkit-radial-gradient(transparent 35%, #009949 35%);
-  background: -moz-radial-gradient(transparent 35%, #009949 35%);
-  background: radial-gradient(transparent 35%, #009949 35%);
+  background: #F5F5F5;
+  background: -webkit-radial-gradient(transparent 35%, #F5F5F5 35%);
+  background: -moz-radial-gradient(transparent 35%, #F5F5F5 35%);
+  background: radial-gradient(transparent 35%, #F5F5F5 35%);
   text-align: center;
   text-decoration: none;
   font-size: 1.2em;
@@ -525,6 +630,8 @@ main #categoryList .selected a div svg {
   pointer-events: auto;
 }
 
+
+/* 
 article:nth-of-type(1) .wrapper li a,
 article:nth-of-type(4) .wrapper li a,
 article:nth-of-type(7) .wrapper li a,
@@ -556,14 +663,14 @@ article:nth-of-type(15) .wrapper li a {
   background: -webkit-radial-gradient(transparent 35%, #812c7c 35%);
   background: -moz-radial-gradient(transparent 35%, #812c7c 35%);
   background: radial-gradient(transparent 35%, #812c7c 35%);
-}
+} */
 
 .selected .wrapper li a span {
   position: relative;
   top: 1em;
   display: block;
   font-size: .5em;
-  color: #ffffff;
+  color: #4a4a4a;
 }
 
 .selected .wrapper li:nth-child(1) {
@@ -663,6 +770,14 @@ article:nth-of-type(15) .wrapper li a {
 @media all and (min-width: 50em) {
   main #intro h1 {
     font-size: 9em;
+  }
+  #chooseCategory {
+    max-width: 65em;
+    margin: 0 auto;
+  }
+  #categoryList {
+    max-width: 65em;
+    margin: 0 auto;
   }
   #resultList {
     display: grid;

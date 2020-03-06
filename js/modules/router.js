@@ -40,9 +40,8 @@ function userInput(id) {
 }
 
 function results(id) {
-  const categoryList = document.querySelector('#categoryList')
-  categoryList.remove()
-    // getNameFromId(id)
+
+  // getNameFromId(id)
 
 
   getData(id)

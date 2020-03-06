@@ -5,6 +5,11 @@ const resultList = document.getElementById('resultList')
 
 // render data
 function renderResults(data, id) {
+  const categoryList = document.querySelector('#categoryList')
+  categoryList.remove()
+  const chooseCategory = document.querySelector('#chooseCategory')
+  chooseCategory.remove()
+
   console.log(data)
   resultList.insertAdjacentHTML('afterbegin', `<a href=""><img src="../img/triangle.png"><p>Ga terug</p></a>
   <div><button>Filter</button><button>Sorteer</button></div>
@@ -44,7 +49,7 @@ function renderCategories(categories) {
       <article id="${cur.id}">
       <a href="#${cur.id}">
       <div> ${cur.image}</div>
-      <h2>${cur.name}</h2>  
+      <p>${cur.name}</p>  
      </a>
      <div class="wrapper"></div>
       </article>
@@ -58,7 +63,7 @@ function renderSubCategories(subCategories, id) {
 
   function renderArray() {
     const subCategoryList = document.querySelector('#' + id + '> div')
-    subCategoryList.insertAdjacentHTML('afterbegin', `<ul class="list"></ul>`)
+    subCategoryList.insertAdjacentHTML('afterbegin', ` <ul class="list"></ul>`)
     const list = document.querySelector('.list')
 
     subCategories.reduce(function(acc, cur, ind) {
