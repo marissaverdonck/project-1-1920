@@ -36,7 +36,8 @@ Git clone https://github.com/marissaverdonck/project-1-1920.git
 
 ## API's 
 ### OBA API
-Website: https://zoeken.oba.nl/api/v1/#/search
+OBA API instruction manual: https://zoeken.oba.nl/api/v1/#/search
+
 
 <details>
     <summary>OBA data</summary>
@@ -58,7 +59,6 @@ Website: https://zoeken.oba.nl/api/v1/#/search
 * Sort
 * Save books in list
 * Go to the next page with (20) results
-* User input: sort by
 
 ## Credits
 * OBA
