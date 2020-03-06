@@ -1,6 +1,6 @@
 # Werkstuk Themarad
 
-<img width="842" alt="Schermafbeelding 2020-02-28 om 08 16 49" src="https://user-images.githubusercontent.com/43657951/76067203-4a50e900-5f8f-11ea-8deb-bccee7a4657b.jpg">
+<img width="842" alt="Schermafbeelding 2020-02-28 om 08 16 49" src="https://user-images.githubusercontent.com/43657951/76068923-538f8500-5f92-11ea-91ac-1043b5c7fc2e.jpg">
 
 
 ## Table of Contents
