@@ -378,6 +378,12 @@ main #categoryList .selected a div svg path {
   background: linear-gradient(180deg, #ffffff 50%, #F5F5F5 50%)
 }
 
+#resultList article:hover h3,
+#resultList article:active h3,
+#resultList article:focus h3 {
+  text-decoration: underline;
+}
+
 #resultList article h3 {
   color: #4a4a4a;
   padding: 0;

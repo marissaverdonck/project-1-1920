@@ -23,30 +23,30 @@ function getData(id) {
   };
 
 
-  const testData = JSON.parse(localStorage.getItem('obaAPI'))
-  renderResults(testData, id)
+  // const testData = JSON.parse(localStorage.getItem('obaAPI'))
+  // renderResults(testData, id)
 
 
 
 
-  // fetch(url, config)
-  //   .then(response => {
-  //     console.log(response);
-  //     return response.json();
-  //   })
-  //   .then(data => {
-  //     console.log(data);
-  //     localStorage.setItem('obaAPI', JSON.stringify(data.results));
-  //     // console.log(localStorage.obaAPI)
-  //     renderResults(data.results)
+  fetch(url, config)
+    .then(response => {
+      console.log(response);
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      localStorage.setItem('obaAPI', JSON.stringify(data.results));
+      // console.log(localStorage.obaAPI)
+      renderResults(data.results)
 
-  //     // return data
-  //   })
-  //   .catch(err => {
-  //     console.log(err);
+      // return data
+    })
+    .catch(err => {
+      console.log(err);
 
-  // return err
-  //   });
+      return err
+    });
 
 }
 

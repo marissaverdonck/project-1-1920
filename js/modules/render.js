@@ -11,24 +11,11 @@ function renderResults(data, id) {
   chooseCategory.remove()
 
   console.log(data)
-  resultList.insertAdjacentHTML('afterbegin', `<a href=""><img src="../img/triangle.png"><p>Ga terug</p></a>
-  <div><button>Filter</button><button>Sorteer</button></div>
-  
+  resultList.insertAdjacentHTML('afterbegin', `<a href=""><img src="./img/triangle.png"><p>Ga terug</p></a>
+  <div><button>Filter</button><button>Sorteer</button></div>  
   `)
 
-
   data.reduce(function(acc, cur, ind) {
-
-    //     resultList.insertAdjacentHTML('beforeend', `
-    //                   <article>
-    //                   <h2>${cur.titles[0]}</h2>
-    //                    <p>${cur.summaries ? cur.summaries[0] : 'Geen samenvatting'}</p>
-    //                 <img src="${
-    //                      cur.coverimages ? cur.coverimages[1] : 'Geen samenvatting'
-    //                    }">
-    //                   </article>
-    // `)
-
     resultList.insertAdjacentHTML('beforeend', `
 <article>
 
